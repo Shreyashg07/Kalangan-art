@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kalangan Art Cafe</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Modak&family=Yatra+One&family=Great+Vibes&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    body {
+      font-family: 'Yatra One', cursive;
+      background-color: #FEF8DD;
+      color: #2E2B2B;
+    }
+    .font-title {
+      font-family: 'Modak', cursive;
+    }
+    .font-subtitle {
+      font-family: 'Great Vibes', cursive;
+    }
+    .btn {
+      background-color: #A23E48;
+      color: #FAF9F6;
+      padding: 8px 16px;
+      border-radius: 5px;
+    }
+    .btn:hover {
+      background-color: #7A8450;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <header class="bg-[#DFC98A] p-6 shadow-md">
+    <div class="max-w-7xl mx-auto flex justify-between items-center">
+      <img src="assets/logo.png" alt="Logo" class="h-20 w-auto" />
+      <nav class="flex space-x-6 items-center text-[#2E2B2B] text-lg">
+        <a href="homepage.html">Home</a>
+        <a href="product.html">Product</a>
+        <a href="workshop.html">Workshop & Event</a>
+        <a href="menu.html">Menu</a>
+        <a href="about.html">About Us</a>
+      </nav>
+      <div class="space-x-3">
+        <a href="signin.html" class="btn text-sm">Sign In</a>
+        <a href="login.html" class="btn text-sm">Log In</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Slider -->
+  <section class="relative max-w-5xl mx-auto mt-6 overflow-hidden rounded-lg shadow-lg">
+    <div class="relative h-[380px]">
+      <img id="sliderImage" src="assets/slider1.jpg" class="w-full h-full object-cover transition-opacity duration-1000" />
+      <div class="absolute inset-0 bg-[#00000050] flex items-center justify-center text-center pointer-events-none">
+        <div class="text-[#FAF9F6] px-4">
+          <h1 class="text-5xl font-title mb-3 drop-shadow">Kalangan Art Cafe</h1>
+          <p class="italic text-xl font-subtitle">A new era of art</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    const images = [
+      "assets/slider1.jpg",
+      "assets/slider2.avif",
+      "assets/slider3.jpg",
+      "assets/slider4.jpg"
+    ];
+    let index = 0;
+    const slider = document.getElementById('sliderImage');
+    setInterval(() => {
+      index = (index + 1) % images.length;
+      slider.src = images[index];
+    }, 4000);
+  </script>
+
+  <hr class="my-10 border-t-4 border-[#CBAE91]" />
+
+  <!-- Shop Section -->
+<section class="max-w-6xl mx-auto text-center">
+  <h2 class="text-3xl font-bold mb-6">Shop</h2>
+  <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 px-6">
+
+    <!-- Handmade Crafts -->
+    <div class="relative">
+      <!-- Product Image (behind) -->
+      <div class="absolute inset-0 flex items-center justify-center z-0">
+        <img src="assets/handcraft.jpg" class="h-68 w-30 object-cover rounded" alt="Handmade Crafts" />
+      </div>
+      <!-- Frame Image (on top) -->
+      <img src="assets/window.png" class="w-full h-auto relative z-10" alt="Frame" />
+      <p class="mt-2 text-center">Handmade Crafts</p>
+    </div>
+
+    <!-- Art Mugs -->
+    <div class="relative">
+      <!-- Product Image (behind) -->
+      <div class="absolute inset-0 flex items-center justify-center z-0">
+        <img src="assets/mug.png" class="h-64 w-30 object-cover rounded" alt="Art Mugs" />
+      </div>
+      <!-- Frame Image (on top) -->
+      <img src="assets/window.png" class="w-full h-auto relative z-10" alt="Frame" />
+      <p class="mt-2 text-center">Art Mugs</p>
+    </div>
+
+    <!-- Canvas Prints -->
+    <div class="relative">
+      <!-- Product Image (behind) -->
+      <div class="absolute inset-0 flex items-center justify-center z-0">
+        <img src="assets/canvas.png" class="h-60 w-30" alt="Canvas Prints" />
+      </div>
+      <!-- Frame Image (on top) -->
+      <img src="assets/window.png" class="w-full h-auto relative z-10" alt="Frame" />
+      <p class="mt-2 text-center">Canvas Prints</p>
+    </div>
+
+  </div>
+  <a href="product.html" class="btn mt-6 inline-block">Explore More</a>
+</section>
+
+  <hr class="my-10 border-t-4 border-[#CBAE91]" />
+
+  <!-- Menu Section -->
+  <section class="max-w-6xl mx-auto text-center">
+    <h2 class="text-3xl font-bold mb-4">Menu</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10 px-10 justify-center">
+      <div>
+        <h3 class="font-bold mb-2">Cafe Menu</h3>
+        <ul class="list-disc list-inside">
+          <li>Coffee</li>
+          <li>Tea</li>
+          <li>Cold Coffee</li>
+          <li>French Fries</li>
+          <li>Sandwich</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="font-bold mb-2">Art Menu</h3>
+        <ul class="list-disc list-inside">
+          <li>Pots</li>
+          <li>Paintings</li>
+          <li>Paper Bags</li>
+          <li>Canvas Frames</li>
+        </ul>
+      </div>
+    </div>
+    <a href="menu.html" class="btn mt-6 inline-block">Explore More</a>
+  </section>
+
+  <hr class="my-10 border-t-4 border-[#CBAE91]" />
+
+  <!-- Workshop & Event -->
+  <section class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-10 px-4">
+    <img src="assets/workshop.jpg" class="rounded shadow-lg w-full md:w-1/2"/>
+    <div class="md:w-1/2">
+      <h2 class="text-3xl mb-3 font-bold">Workshop & Events</h2>
+      <p class="mb-4">Discover your inner artist. <br> Join our sessions led by experienced artisans, held every weekend.<br> Limited seats available. <br> Contact us fast</p>
+      <a href="workshop.html" class="btn">Explore More</a>
+    </div>
+  </section>
+
+  <hr class="my-10 border-t-4 border-[#CBAE91]" />
+
+  <!-- About Preview -->
+  <section class="max-w-6xl mx-auto text-center mb-12 px-4">
+    <h2 class="text-3xl font-bold mb-4">About Us</h2>
+    <p class="max-w-2xl mx-auto">Kalangan Art Cafe is a cultural space where creativity meets chai. Our story is rooted in reviving local craftsmanship and community bonding.</p>
+    <a href="about.html" class="btn mt-4 inline-block">Know More</a>
+  </section>
+
+  
+
+  <!-- Footer with Background Image -->
+  <footer class="relative text-black py-10">
+    <!-- Background Image -->
+    <div class="absolute inset-0">
+      <img src="assets/bg.png" alt="Footer Background" class="w-full h-full object-cover" />
+      <div class="absolute inset-0 bg-white bg-opacity-30"></div>
+    </div>
+
+    <!-- Content -->
+    <div class="relative max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 px-6 z-10">
+      
+      <!-- Left -->
+      <div>
+        <h3 class="text-xl font-bold mb-2">Why to Choose Kalangan?</h3>
+        <p>At Kalangan, we blend tradition with creativity. Our curated products support local artisans, and our café offers a soulful ambiance. We believe in sustainable, handcrafted beauty with a purpose.</p>
+      </div>
+      
+      <!-- Center: Map -->
+      <div class="text-center">
+        <h3 class="text-xl font-bold mb-2">Our Location</h3>
+        <iframe src="https://www.google.com/maps?q=Harkel+Studios&output=embed" class="w-full h-48 rounded shadow"></iframe>
+      </div>
+      
+      <!-- Right: Feedback -->
+      <div>
+        <h3 class="text-xl font-bold mb-2">Feedback</h3>
+        <form class="space-y-2">
+          <input type="text" placeholder="Your Name" class="w-full p-2 border border-gray-300 rounded"/>
+          <input type="email" placeholder="Your Email" class="w-full p-2 border border-gray-300 rounded"/>
+          <textarea placeholder="Your Feedback" class="w-full p-2 border border-gray-300 rounded"></textarea>
+          <button type="submit" class="btn">Submit</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Social Icons -->
+    <div class="relative mt-8 text-center space-x-4 z-10">
+      <a href="#"><img src="assets/face-book.png" class="inline h-6" alt="Facebook"/></a>
+      <a href="#"><img src="assets/instagram.png" class="inline h-6" alt="Instagram"/></a>
+      <a href="#"><img src="assets/twitter.png" class="inline h-6" alt="Twitter"/></a>
+    </div>
+
+    <!-- Copyright -->
+    <p class="relative text-center text-sm mt-2 z-10">&copy; 2025 Kalangan Art Cafe. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
