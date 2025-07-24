@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Kalangan Art Cafe</title>
 
-  <!-- Fonts -->
+  <!-- Google Fonts & Tailwind -->
   <link href="https://fonts.googleapis.com/css2?family=Modak&family=Yatra+One&family=Great+Vibes&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
 
@@ -34,20 +34,20 @@
   </style>
 </head>
 
-<body>
+<body class="overflow-x-hidden">
 
   <!-- Navbar -->
-  <header class="bg-[#DFC98A] p-6 shadow-md">
-    <div class="max-w-7xl mx-auto flex justify-between items-center">
-      <img src="assets/logo.png" alt="Logo" class="h-20 w-auto" />
-      <nav class="flex space-x-6 items-center text-[#2E2B2B] text-lg">
+  <header class="bg-[#DFC98A] p-4 shadow-md">
+    <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center">
+      <img src="assets/logo.png" alt="Logo" class="h-16 w-auto" />
+      <nav class="flex flex-wrap justify-center space-x-4 text-[#2E2B2B] text-base mt-2 md:mt-0">
         <a href="index.html">Home</a>
         <a href="product.html">Product</a>
         <a href="workshop.html">Workshop & Event</a>
         <a href="menu.html">Menu</a>
         <a href="about.html">About Us</a>
       </nav>
-      <div class="space-x-3">
+      <div class="space-x-2 mt-2 md:mt-0">
         <a href="signin.html" class="btn text-sm">Sign In</a>
         <a href="login.html" class="btn text-sm">Log In</a>
       </div>
@@ -85,53 +85,45 @@
   <hr class="my-10 border-t-4 border-[#CBAE91]" />
 
   <!-- Shop Section -->
-<section class="max-w-6xl mx-auto text-center">
-  <h2 class="text-3xl font-bold mb-6">Shop</h2>
-  <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 px-6">
+  <section class="max-w-6xl mx-auto text-center px-4">
+    <h2 class="text-3xl font-bold mb-6">Shop</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
 
-    <!-- Handmade Crafts -->
-    <div class="relative">
-      <!-- Product Image (behind) -->
-      <div class="absolute inset-0 flex items-center justify-center z-0">
-        <img src="assets/handcraft.jpg" class="h-68 w-30 object-cover rounded" alt="Handmade Crafts" />
+      <!-- Product Item Template -->
+      <div class="relative">
+        <img src="assets/window.png" class="w-full h-auto relative z-10" alt="Frame" />
+        <div class="absolute inset-0 flex items-center justify-center z-0 p-6">
+          <img src="assets/handcraft.jpg" class="w-68 h-30 object-cover rounded border-2 border-white shadow-lg" alt="Product" />
+        </div>
+        <p class="mt-2 text-center">Handmade Crafts</p>
       </div>
-      <!-- Frame Image (on top) -->
-      <img src="assets/window.png" class="w-full h-auto relative z-10" alt="Frame" />
-      <p class="mt-2 text-center">Handmade Crafts</p>
-    </div>
 
-    <!-- Art Mugs -->
-    <div class="relative">
-      <!-- Product Image (behind) -->
-      <div class="absolute inset-0 flex items-center justify-center z-0">
-        <img src="assets/mug.png" class="h-64 w-30 object-cover rounded" alt="Art Mugs" />
+      <div class="relative">
+        <img src="assets/window.png" class="w-full h-auto relative z-10" alt="Frame" />
+        <div class="absolute inset-0 flex items-center justify-center z-0 p-6">
+          <img src="assets/mug.png" class="w-64 h-30 object-cover rounded border-2 border-white shadow-lg" alt="Product" />
+        </div>
+        <p class="mt-2 text-center">Art Mugs</p>
       </div>
-      <!-- Frame Image (on top) -->
-      <img src="assets/window.png" class="w-full h-auto relative z-10" alt="Frame" />
-      <p class="mt-2 text-center">Art Mugs</p>
-    </div>
 
-    <!-- Canvas Prints -->
-    <div class="relative">
-      <!-- Product Image (behind) -->
-      <div class="absolute inset-0 flex items-center justify-center z-0">
-        <img src="assets/canvas.png" class="h-60 w-30" alt="Canvas Prints" />
+      <div class="relative">
+        <img src="assets/window.png" class="w-full h-auto relative z-10" alt="Frame" />
+        <div class="absolute inset-0 flex items-center justify-center z-0 p-6">
+          <img src="assets/canvas.png" class="w-30 h-64 object-cover rounded border-2 border-white shadow-lg" alt="Product" />
+        </div>
+        <p class="mt-2 text-center">Canvas Prints</p>
       </div>
-      <!-- Frame Image (on top) -->
-      <img src="assets/window.png" class="w-full h-auto relative z-10" alt="Frame" />
-      <p class="mt-2 text-center">Canvas Prints</p>
-    </div>
 
-  </div>
-  <a href="product.html" class="btn mt-6 inline-block">Explore More</a>
-</section>
+    </div>
+    <a href="product.html" class="btn mt-6 inline-block">Explore More</a>
+  </section>
 
   <hr class="my-10 border-t-4 border-[#CBAE91]" />
 
   <!-- Menu Section -->
-  <section class="max-w-6xl mx-auto text-center">
+  <section class="max-w-6xl mx-auto text-center px-4">
     <h2 class="text-3xl font-bold mb-4">Menu</h2>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-10 px-10 justify-center">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10 justify-center">
       <div>
         <h3 class="font-bold mb-2">Cafe Menu</h3>
         <ul class="list-disc list-inside">
@@ -157,12 +149,12 @@
 
   <hr class="my-10 border-t-4 border-[#CBAE91]" />
 
-  <!-- Workshop & Event -->
+  <!-- Workshop Section -->
   <section class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-10 px-4">
     <img src="assets/workshop.jpg" class="rounded shadow-lg w-full md:w-1/2"/>
     <div class="md:w-1/2">
       <h2 class="text-3xl mb-3 font-bold">Workshop & Events</h2>
-      <p class="mb-4">Discover your inner artist. <br> Join our sessions led by experienced artisans, held every weekend.<br> Limited seats available. <br> Contact us fast</p>
+      <p class="mb-4">Discover your inner artist. Join our weekend sessions led by artisans. Limited seats available!</p>
       <a href="workshop.html" class="btn">Explore More</a>
     </div>
   </section>
@@ -172,13 +164,11 @@
   <!-- About Preview -->
   <section class="max-w-6xl mx-auto text-center mb-12 px-4">
     <h2 class="text-3xl font-bold mb-4">About Us</h2>
-    <p class="max-w-2xl mx-auto">Kalangan Art Cafe is a cultural space where creativity meets chai. Our story is rooted in reviving local craftsmanship and community bonding.</p>
+    <p class="max-w-2xl mx-auto">Kalangan Art Cafe is a cultural space where creativity meets chai. We revive local craftsmanship and create a welcoming community hub.</p>
     <a href="about.html" class="btn mt-4 inline-block">Know More</a>
   </section>
 
-  
-
-  <!-- Footer with Background Image -->
+  <!-- Footer -->
   <footer class="relative text-black py-10">
     <!-- Background Image -->
     <div class="absolute inset-0">
@@ -192,13 +182,13 @@
       <!-- Left -->
       <div>
         <h3 class="text-xl font-bold mb-2">Why to Choose Kalangan?</h3>
-        <p>At Kalangan, we blend tradition with creativity. Our curated products support local artisans, and our café offers a soulful ambiance. We believe in sustainable, handcrafted beauty with a purpose.</p>
+        <p>We blend tradition with creativity. Supporting local artisans and offering a soulful cafe experience with every handcrafted product.</p>
       </div>
       
       <!-- Center: Map -->
       <div class="text-center">
         <h3 class="text-xl font-bold mb-2">Our Location</h3>
-        <iframe src="https://www.google.com/maps?q=Harkel+Studios&output=embed" class="w-full h-48 rounded shadow"></iframe>
+        <iframe src="https://www.google.com/maps?q=Harkel+Studios&output=embed" class="w-full h-48 rounded border-[3px] border-yellow-600 shadow"></iframe>
       </div>
       
       <!-- Right: Feedback -->
