@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kalangan Art Cafe</title>
+
+  <!-- Google Fonts & Tailwind -->
+  <link href="https://fonts.googleapis.com/css2?family=Modak&family=Yatra+One&family=Great+Vibes&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    body {
+      font-family: 'Yatra One', cursive;
+      background-color: #FEF8DD;
+      color: #2E2B2B;
+    }
+    .font-title {
+      font-family: 'Modak', cursive;
+    }
+    .font-subtitle {
+      font-family: 'Great Vibes', cursive;
+    }
+    .btn {
+      background-color: #A23E48;
+      color: #FAF9F6;
+      padding: 8px 16px;
+      border-radius: 5px;
+    }
+    .btn:hover {
+      background-color: #7A8450;
+      color: white;
+    }
+  </style>
+</head>
+
+<body class="overflow-x-hidden">
+
+  <!-- Navbar -->
+  <header class="bg-[#DFC98A] p-4 shadow-md">
+    <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center">
+      <img src="assets/logo.png" alt="Logo" class="h-16 w-auto" />
+      <nav class="flex flex-wrap justify-center space-x-4 text-[#2E2B2B] text-base mt-2 md:mt-0">
+        <a href="index.html">Home</a>
+        <a href="product.html">Product</a>
+        <a href="workshop.html">Workshop & Event</a>
+        <a href="menu.html">Menu</a>
+        <a href="about.html">About Us</a>
+      </nav>
+      <div class="space-x-2 mt-2 md:mt-0">
+        <a href="signin.html" class="btn text-sm">Sign In</a>
+        <a href="login.html" class="btn text-sm">Log In</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <div class="max-w-7xl mx-auto flex flex-col md:flex-row mt-6 px-4 gap-6">
+
+    <!-- Sidebar Filters -->
+    <aside class="w-full md:w-1/4 bg-white p-4 rounded shadow">
+      <h2 class="font-title text-2xl mb-4">Filters</h2>
+      <div class="mb-4">
+        <h3 class="font-semibold">Category</h3>
+        <label><input type="checkbox" class="mr-2">Handmade</label><br>
+        <label><input type="checkbox" class="mr-2">Decor</label><br>
+        <label><input type="checkbox" class="mr-2">Accessories</label>
+      </div>
+      <div class="mb-4">
+        <h3 class="font-semibold">Price</h3>
+        <input type="range" min="100" max="1000" class="w-full">
+      </div>
+    </aside>
+
+    <!-- Product Grid -->
+    <section class="w-full md:w-3/4">
+      <h2 class="font-title text-3xl mb-6">Products</h2>
+
+      <!-- Rakhi Button -->
+      <div class="text-center mb-6">
+        <a href="#rakhi-festival" class="btn text-lg">🎉 View Rakhi Specials</a>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Product Card -->
+        <div class="bg-white rounded shadow hover:shadow-lg transition duration-300">
+          <img src="assets/mug.png" alt="Product" class="w-full h-60 object-cover rounded-t">
+          <div class="p-4">
+            <h3 class="font-semibold text-lg">Handcrafted Mug</h3>
+            <p class="text-sm text-gray-500 mb-2">Traditional ceramic design</p>
+            <p class="text-[#A23E48] font-bold text-xl">₹499</p>
+            <button class="btn mt-2 w-full">Add to Cart</button>
+          </div>
+        </div>
+        <div class="bg-white rounded shadow hover:shadow-lg transition duration-300">
+          <img src="assets/products/madhuban.jpg" alt="Product" class="w-full h-60 object-cover rounded-t">
+          <div class="p-4">
+            <h3 class="font-semibold text-lg">Madhuban Wall Frame</h3>
+            <p class="text-sm text-gray-500 mb-2">Traditional design</p>
+            <p class="text-[#A23E48] font-bold text-xl">₹999</p>
+            <button class="btn mt-2 w-full">Add to Cart</button>
+          </div>
+        </div>
+        <div class="bg-white rounded shadow hover:shadow-lg transition duration-300">
+          <img src="assets/products/warli.jpg" alt="Product" class="w-full h-60 object-cover rounded-t">
+          <div class="p-4">
+            <h3 class="font-semibold text-lg">Warli Art Frame</h3>
+            <p class="text-sm text-gray-500 mb-2">warli canvas design</p>
+            <p class="text-[#A23E48] font-bold text-xl">₹699</p>
+            <button class="btn mt-2 w-full">Add to Cart</button>
+          </div>
+        </div>
+        <div class="bg-white rounded shadow hover:shadow-lg transition duration-300">
+          <img src="assets/products/teri.webp" alt="Product" class="w-full h-60 object-cover rounded-t">
+          <div class="p-4">
+            <h3 class="font-semibold text-lg">Terrecota Wall Plates</h3>
+            <p class="text-sm text-gray-500 mb-2">Traditional plates design</p>
+            <p class="text-[#A23E48] font-bold text-xl">₹499</p>
+            <button class="btn mt-2 w-full">Add to Cart</button>
+          </div>
+        </div>
+        <div class="bg-white rounded shadow hover:shadow-lg transition duration-300">
+          <img src="assets/products/mandala.jpg" alt="Product" class="w-full h-60 object-cover rounded-t">
+          <div class="p-4">
+            <h3 class="font-semibold text-lg">Mandala Wood Coasters</h3>
+            <p class="text-sm text-gray-500 mb-2">Traditional  design</p>
+            <p class="text-[#A23E48] font-bold text-xl">₹399</p>
+            <button class="btn mt-2 w-full">Add to Cart</button>
+          </div>
+        </div>
+        <div class="bg-white rounded shadow hover:shadow-lg transition duration-300">
+          <img src="assets/products/kalam.jpg" alt="Product" class="w-full h-60 object-cover rounded-t">
+          <div class="p-4">
+            <h3 class="font-semibold text-lg">Kalamkari Scroll Painting</h3>
+            <p class="text-sm text-gray-500 mb-2">Traditional  design</p>
+            <p class="text-[#A23E48] font-bold text-xl">₹899</p>
+            <button class="btn mt-2 w-full">Add to Cart</button>
+          </div>
+        </div>
+        <div class="bg-white rounded shadow hover:shadow-lg transition duration-300">
+          <img src="assets/products/min.jpg" alt="Product" class="w-full h-60 object-cover rounded-t">
+          <div class="p-4">
+            <h3 class="font-semibold text-lg">Miniature Pattachitra Frame</h3>
+            <p class="text-sm text-gray-500 mb-2">Traditional  design</p>
+            <p class="text-[#A23E48] font-bold text-xl">₹499</p>
+            <button class="btn mt-2 w-full">Add to Cart</button>
+          </div>
+        </div>
+        <div class="bg-white rounded shadow hover:shadow-lg transition duration-300">
+          <img src="assets/products/kulhad.jpg" alt="Product" class="w-full h-60 object-cover rounded-t">
+          <div class="p-4">
+            <h3 class="font-semibold text-lg">Kulhad Set with Tray</h3>
+            <p class="text-sm text-gray-500 mb-2">Traditional design</p>
+            <p class="text-[#A23E48] font-bold text-xl">₹899</p>
+            <button class="btn mt-2 w-full">Add to Cart</button>
+          </div>
+        </div>
+        <div class="bg-white rounded shadow hover:shadow-lg transition duration-300">
+          <img src="assets/products/pen.jpg" alt="Product" class="w-full h-60 object-cover rounded-t">
+          <div class="p-4">
+            <h3 class="font-semibold text-lg">Painted Pen Stand</h3>
+            <p class="text-sm text-gray-500 mb-2">Traditional  design</p>
+            <p class="text-[#A23E48] font-bold text-xl">₹199</p>
+            <button class="btn mt-2 w-full">Add to Cart</button>
+          </div>
+        </div>
+        <div class="bg-white rounded shadow hover:shadow-lg transition duration-300">
+          <img src="assets/products/card.webp" alt="Product" class="w-full h-60 object-cover rounded-t">
+          <div class="p-4">
+            <h3 class="font-semibold text-lg">Art Postcard Pack</h3>
+            <p class="text-sm text-gray-500 mb-2">Traditional  design</p>
+            <p class="text-[#A23E48] font-bold text-xl">₹49</p>
+            <button class="btn mt-2 w-full">Add to Cart</button>
+          </div>
+        </div>
+        <div class="bg-white rounded shadow hover:shadow-lg transition duration-300">
+          <img src="assets/products/book.jpg" alt="Product" class="w-full h-60 object-cover rounded-t">
+          <div class="p-4">
+            <h3 class="font-semibold text-lg">Gond Art Bookmarks</h3>
+            <p class="text-sm text-gray-500 mb-2">Traditional  design</p>
+            <p class="text-[#A23E48] font-bold text-xl">₹99</p>
+            <button class="btn mt-2 w-full">Add to Cart</button>
+          </div>
+        </div>
+        <div class="bg-white rounded shadow hover:shadow-lg transition duration-300">
+          <img src="assets/products/books.webp" alt="Product" class="w-full h-60 object-cover rounded-t">
+          <div class="p-4">
+            <h3 class="font-semibold text-lg">Block-Printed Diary</h3>
+            <p class="text-sm text-gray-500 mb-2">Traditional  design</p>
+            <p class="text-[#A23E48] font-bold text-xl">₹99</p>
+            <button class="btn mt-2 w-full">Add to Cart</button>
+          </div>
+        </div>
+        
+      </div>
+
+      <!-- Rakhi Festival Section -->
+      <section id="rakhi-festival" class="mt-16 bg-[#FFF0F3] py-10 px-4 rounded shadow-md scroll-mt-20">
+        <h2 class="text-4xl font-title text-center text-[#A23E48] mb-4">🎉 Rakhi Festival Specials</h2>
+        <p class="text-center text-gray-600 mb-10">Celebrate the bond of love with handcrafted rakhis, elegant gift sets, and more.</p>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <!-- Rakhi Product Cards -->
+          <div class="bg-white rounded shadow hover:shadow-lg transition duration-300">
+            <img src="assets/rakhi/american.webp" alt="Rakhi 1" class="w-full h-60 object-cover rounded-t">
+            <div class="p-4">
+              <h3 class="font-semibold text-lg">Traditional Rakhi</h3>
+              <p class="text-sm text-gray-500 mb-2">With American Diamond</p>
+              <p class="text-[#A23E48] font-bold text-xl">₹119</p>
+              <button class="btn mt-2 w-full">Add to Cart</button>
+            </div>
+          </div>
+          <div class="bg-white rounded shadow hover:shadow-lg transition duration-300">
+            <img src="assets/rakhi/designer.webp" alt="Rakhi 2" class="w-full h-60 object-cover rounded-t">
+            <div class="p-4">
+              <h3 class="font-semibold text-lg">Designer Rakhi Set</h3>
+              <p class="text-sm text-gray-500 mb-2">Various combo designs</p>
+              <p class="text-[#A23E48] font-bold text-xl">₹299</p>
+              <button class="btn mt-2 w-full">Add to Cart</button>
+            </div>
+          </div>
+          <div class="bg-white rounded shadow hover:shadow-lg transition duration-300">
+            <img src="assets/rakhi/rudraksha.jpg" alt="Rakhi 1" class="w-full h-60 object-cover rounded-t">
+            <div class="p-4">
+              <h3 class="font-semibold text-lg">Traditional Rakhi</h3>
+              <p class="text-sm text-gray-500 mb-2">With Rudraksha beads</p>
+              <p class="text-[#A23E48] font-bold text-xl">₹29</p>
+              <button class="btn mt-2 w-full">Add to Cart</button>
+            </div>
+          </div>
+          <div class="bg-white rounded shadow hover:shadow-lg transition duration-300">
+            <img src="assets/rakhi/flower.webp" alt="Rakhi 2" class="w-full h-60 object-cover rounded-t">
+            <div class="p-4">
+              <h3 class="font-semibold text-lg">Flower Rakhi </h3>
+              <p class="text-sm text-gray-500 mb-2">Flower type design/p>
+              <p class="text-[#A23E48] font-bold text-xl">₹29</p>
+              <button class="btn mt-2 w-full">Add to Cart</button>
+            </div>
+          </div>
+          <div class="bg-white rounded shadow hover:shadow-lg transition duration-300">
+            <img src="assets/rakhi/gift.webp" alt="Rakhi 1" class="w-full h-60 object-cover rounded-t">
+            <div class="p-4">
+              <h3 class="font-semibold text-lg">Rakhi Gift Hamper</h3>
+              <p class="text-sm text-gray-500 mb-2">With sweets</p>
+              <p class="text-[#A23E48] font-bold text-xl">₹399</p>
+              <button class="btn mt-2 w-full">Add to Cart</button>
+            </div>
+          </div>
+          <div class="bg-white rounded shadow hover:shadow-lg transition duration-300">
+            <img src="assets/rakhi/gold.webp" alt="Rakhi 2" class="w-full h-60 object-cover rounded-t">
+            <div class="p-4">
+              <h3 class="font-semibold text-lg">Gold Rakhi </h3>
+              <p class="text-sm text-gray-500 mb-2">Gold pattern designs</p>
+              <p class="text-[#A23E48] font-bold text-xl">₹69</p>
+              <button class="btn mt-2 w-full">Add to Cart</button>
+            </div>
+          </div>
+          <div class="bg-white rounded shadow hover:shadow-lg transition duration-300">
+            <img src="assets/rakhi/kids.webp" alt="Rakhi 1" class="w-full h-60 object-cover rounded-t">
+            <div class="p-4">
+              <h3 class="font-semibold text-lg">kids Rakhi</h3>
+              <p class="text-sm text-gray-500 mb-2">cartoons designs</p>
+              <p class="text-[#A23E48] font-bold text-xl">₹39</p>
+              <button class="btn mt-2 w-full">Add to Cart</button>
+            </div>
+          </div>
+          <div class="bg-white rounded shadow hover:shadow-lg transition duration-300">
+            <img src="assets/rakhi/kundan.jpg" alt="Rakhi 2" class="w-full h-60 object-cover rounded-t">
+            <div class="p-4">
+              <h3 class="font-semibold text-lg">kundan Rakhi</h3>
+              <p class="text-sm text-gray-500 mb-2">kundan designs</p>
+              <p class="text-[#A23E48] font-bold text-xl">₹299</p>
+              <button class="btn mt-2 w-full">Add to Cart</button>
+            </div>
+          </div>
+          <div class="bg-white rounded shadow hover:shadow-lg transition duration-300">
+            <img src="assets/rakhi/set1.webp" alt="Rakhi 1" class="w-full h-60 object-cover rounded-t">
+            <div class="p-4">
+              <h3 class="font-semibold text-lg">Traditional Rakhi Set 1</h3>
+              <p class="text-sm text-gray-500 mb-2">whole rakhi set</p>
+              <p class="text-[#A23E48] font-bold text-xl">₹199</p>
+              <button class="btn mt-2 w-full">Add to Cart</button>
+            </div>
+          </div>
+          <div class="bg-white rounded shadow hover:shadow-lg transition duration-300">
+            <img src="assets/rakhi/set2.webp" alt="Rakhi 2" class="w-full h-60 object-cover rounded-t">
+            <div class="p-4">
+              <h3 class="font-semibold text-lg">Traditional Rakhi Set 2</h3>
+              <p class="text-sm text-gray-500 mb-2">whole rakhi set</p>
+              <p class="text-[#A23E48] font-bold text-xl">₹299</p>
+              <button class="btn mt-2 w-full">Add to Cart</button>
+            </div>
+          </div>
+          <div class="bg-white rounded shadow hover:shadow-lg transition duration-300">
+            <img src="assets/rakhi/set3.webp" alt="Rakhi 1" class="w-full h-60 object-cover rounded-t">
+            <div class="p-4">
+              <h3 class="font-semibold text-lg">Traditional Rakhi Set 3</h3>
+              <p class="text-sm text-gray-500 mb-2">whole rakhi set</p>
+              <p class="text-[#A23E48] font-bold text-xl">₹199</p>
+              <button class="btn mt-2 w-full">Add to Cart</button>
+            </div>
+          </div>
+          <div class="bg-white rounded shadow hover:shadow-lg transition duration-300">
+            <img src="assets/rakhi/set4.webp" alt="Rakhi 2" class="w-full h-60 object-cover rounded-t">
+            <div class="p-4">
+              <h3 class="font-semibold text-lg">Traditional Rakhi Set 4</h3>
+              <p class="text-sm text-gray-500 mb-2">whole rakhi set</p>
+              <p class="text-[#A23E48] font-bold text-xl">₹299</p>
+              <button class="btn mt-2 w-full">Add to Cart</button>
+            </div>
+          </div>
+          <!-- Add more Rakhi product cards -->
+        </div>
+      </section>
+    </section>
+  </div>
+
+  <!-- Footer -->
+  <footer class="relative text-black py-10 mt-16">
+    <div class="absolute inset-0">
+      <img src="assets/bg.png" alt="Footer Background" class="w-full h-full object-cover" />
+      <div class="absolute inset-0 bg-white bg-opacity-30"></div>
+    </div>
+    <div class="relative max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 px-6 z-10">
+      <div>
+        <h3 class="text-xl font-bold mb-2">Why to Choose Kalangan?</h3>
+        <p>We blend tradition with creativity. Supporting local artisans and offering a soulful cafe experience with every handcrafted product.</p>
+      </div>
+      <div class="text-center">
+        <h3 class="text-xl font-bold mb-2">Our Location</h3>
+        <iframe src="https://www.google.com/maps?q=Harkel+Studios&output=embed" class="w-full h-48 rounded border-[3px] border-yellow-600 shadow"></iframe>
+      </div>
+      <div>
+        <h3 class="text-xl font-bold mb-2">Feedback</h3>
+        <form class="space-y-2">
+          <input type="text" placeholder="Your Name" class="w-full p-2 border border-gray-300 rounded"/>
+          <input type="email" placeholder="Your Email" class="w-full p-2 border border-gray-300 rounded"/>
+          <textarea placeholder="Your Feedback" class="w-full p-2 border border-gray-300 rounded"></textarea>
+          <button type="submit" class="btn">Submit</button>
+        </form>
+      </div>
+    </div>
+    <div class="relative mt-8 text-center space-x-4 z-10">
+      <a href="#"><img src="assets/face-book.png" class="inline h-6" alt="Facebook"/></a>
+      <a href="#"><img src="assets/instagram.png" class="inline h-6" alt="Instagram"/></a>
+      <a href="#"><img src="assets/twitter.png" class="inline h-6" alt="Twitter"/></a>
+    </div>
+    <p class="relative text-center text-sm mt-2 z-10">&copy; 2025 Kalangan Art Cafe. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
+
+

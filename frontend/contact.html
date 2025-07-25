@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us | Kalangan Art Cafe</title>
+  <link href="https://fonts.googleapis.com/css2?family=Modak&family=Yatra+One&family=Great+Vibes&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: 'Yatra One', cursive;
+      background-color: #FEF8DD;
+      color: #2E2B2B;
+    }
+    .font-title {
+      font-family: 'Modak', cursive;
+    }
+    .font-subtitle {
+      font-family: 'Great Vibes', cursive;
+    }
+    .btn {
+      background-color: #A23E48;
+      color: #FAF9F6;
+      padding: 10px 20px;
+      border-radius: 6px;
+    }
+    .btn:hover {
+      background-color: #7A8450;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="bg-[#DFC98A] p-6 shadow-md">
+    <div class="max-w-7xl mx-auto flex justify-between items-center">
+      <img src="assets/logo.png" alt="Kalangan Logo" class="h-12">
+      <nav class="flex space-x-6 items-center text-[#2E2B2B] text-lg">
+        <a href="index.html">Home</a>
+        <a href="product.html">Product</a>
+        <a href="workshop.html">Workshop & Event</a>
+        <a href="menu.html">Menu</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html" class="font-bold underline">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="text-center py-12">
+    <h1 class="text-5xl font-title mb-4 text-[#A23E48]">Get in Touch</h1>
+    <p class="font-subtitle text-xl text-gray-600">We’d love to hear from you!</p>
+  </section>
+
+  <!-- Contact + Map -->
+  <section class="max-w-6xl mx-auto px-6 py-8 grid md:grid-cols-2 gap-10">
+    <!-- Contact Form -->
+    <div>
+      <h2 class="text-2xl font-bold mb-4">Send Us a Message</h2>
+      <form class="space-y-4">
+        <input type="text" placeholder="Your Name" class="w-full p-3 border border-gray-300 rounded"/>
+        <input type="email" placeholder="Your Email" class="w-full p-3 border border-gray-300 rounded"/>
+        <textarea placeholder="Your Message" rows="5" class="w-full p-3 border border-gray-300 rounded"></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </div>
+
+    <!-- Map -->
+    <div>
+      <h2 class="text-2xl font-bold mb-4">Our Location</h2>
+      <div class="border-[6px] border-yellow-700 rounded overflow-hidden shadow-md">
+        <iframe
+          src="https://www.google.com/maps?q=Harkel+Studios&output=embed"
+          width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Info -->
+  <section class="text-center py-10">
+    <h2 class="text-2xl font-bold mb-2">Contact Info</h2>
+    <p>Email: kalanganartcafe@gmail.com</p>
+    <p>Phone: +91 9876543210</p>
+    <p>Location: Harkel Studios, Pune</p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="relative bg-cover bg-center text-black" style="background-image: url('assets/example.png');">
+    <div class="bg-white/70 backdrop-blur-sm py-10 px-4 grid md:grid-cols-3 gap-6 text-sm">
+      <!-- Why Kalangan -->
+      <div>
+        <h3 class="font-bold text-xl mb-2">Why Choose Kalangan</h3>
+        <p>We blend heritage with hospitality. Handcrafted art, soulful events, and delicious food await in a space where culture meets comfort.</p>
+      </div>
+
+      <!-- Map Again (optional) -->
+      <div class="text-center">
+        <h3 class="font-bold text-xl mb-2">Visit Us</h3>
+        <iframe
+          src="https://www.google.com/maps?q=Harkel+Studios&output=embed"
+          width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+
+      <!-- Feedback Form -->
+      <div>
+        <h3 class="font-bold text-xl mb-2">Feedback</h3>
+        <form class="space-y-3">
+          <input type="text" placeholder="Name" class="w-full p-2 border border-black rounded"/>
+          <input type="email" placeholder="Email" class="w-full p-2 border border-black rounded"/>
+          <textarea placeholder="Your Feedback" class="w-full p-2 border border-black rounded" rows="3"></textarea>
+          <button type="submit" class="btn w-full bg-[#A23E48] text-white">Submit</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Social & Copyright -->
+    <div class="text-center py-4 bg-white/90">
+      <div class="flex justify-center space-x-4 text-2xl">
+        <a href="#"><img src="assets/instagram.png" class="h-6" alt="Instagram"></a>
+        <a href="#"><img src="assets/face-book.png" class="h-6" alt="Facebook"></a>
+        <a href="#"><img src="assets/twitter.png" class="h-6" alt="Twitter"></a>
+      </div>
+      <p class="text-sm mt-2">© 2025 Kalangan Art Cafe. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
